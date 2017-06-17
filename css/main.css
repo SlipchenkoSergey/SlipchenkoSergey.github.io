@@ -246,7 +246,7 @@ body textarea:required:valid {
 	}
 	.left_side.active  + .content {
 		overflow: auto;
-		left: 200px;
+		left: 245px;
 		transition-delay: .5s;
 	}
 /*div.gallery.active  {
