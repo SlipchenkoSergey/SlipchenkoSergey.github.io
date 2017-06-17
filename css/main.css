@@ -266,6 +266,7 @@ body textarea:required:valid {
 		background-color: rgba(15, 15, 14, 0.41);
 	}
 	.filter_label {
+		color: antiquewhite;
 		background-color: transparent;
 		border-color: #000;
 		-webkit-transition: all .5s;
