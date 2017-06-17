@@ -245,9 +245,9 @@ body textarea:required:valid {
 		transform: scale(1.1);
 	}
 	.left_side.active  + .content {
-    overflow: auto;
-    left: 13%;
-    transition-delay: .5s;
+		overflow: auto;
+		left: 200px;
+		transition-delay: .5s;
 	}
 /*div.gallery.active  {
 		display: inline;

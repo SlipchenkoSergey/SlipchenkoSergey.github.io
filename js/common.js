@@ -10,7 +10,7 @@ $("body, .left_side").niceScroll({
 	"verge" : "500",
 });
 							// если не работает скролл
-$(".gallery").css("min-height", $(document).height()*2);
+// $(".gallery").css("min-height", $(document).height()*2);
 							// bottom-menu
 $(".btn_mnu").click(function() {
 	$(this).toggleClass("active");
@@ -28,11 +28,11 @@ $(".count_element").on("click", (function() {
 }));
 
 	//SVG Fallback
-if(!Modernizr.svg) {
-	$("img[src*='svg']").attr("src", function() {
-	return $(this).attr("src").replace(".svg", ".png");
-});
-};
+// if(!Modernizr.svg) {
+// 	$("img[src*='svg']").attr("src", function() {
+// 	return $(this).attr("src").replace(".svg", ".png");
+// });
+// };
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
