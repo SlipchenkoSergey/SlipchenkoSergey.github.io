@@ -17,6 +17,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	h1 {
+		font-size: 23px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 13px;	
+	}
 	/*about-page*/
 	.aside_content {
 		padding-top: 0;
@@ -33,8 +42,13 @@
 	p {
    	 	margin: 0 0 0px;
    	 }
-
+	/*=======contacts_page========*/
+	.form_contacts form{
+		padding: 5px 5px 5px 5px;
+		font-size: 12px;
+	}
 }
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {

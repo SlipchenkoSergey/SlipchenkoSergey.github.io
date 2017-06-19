@@ -5,7 +5,7 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 });
 			// line-scroll
-$("body, .left_side").niceScroll({
+$("body, .left_side, .mfp-zoom-out-cur").niceScroll({
 	horizrailenabled : false,
 	"verge" : "500",
 });
@@ -18,8 +18,6 @@ $(".btn_mnu").click(function() {
 	$(".content").toggleClass("active");
 });
 
-$(".gallery").css("min-height", $(document).height()*1.1);
-
 	//Цели для Яндекс.Метрики и Google Analytics
 $(".count_element").on("click", (function() {
 	ga("send", "event", "goal", "goal");
@@ -28,15 +26,15 @@ $(".count_element").on("click", (function() {
 }));
 
 	//SVG Fallback
-// if(!Modernizr.svg) {
-// 	$("img[src*='svg']").attr("src", function() {
-// 	return $(this).attr("src").replace(".svg", ".png");
-// });
-// };
+if(!Modernizr.svg) {
+	$("img[src*='svg']").attr("src", function() {
+	return $(this).attr("src").replace(".svg", ".png");
+});
+};
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-$("#form").submit(function() {
+$("#collback").submit(function() {
 	$.ajax({
 		type: "POST",
 		url: "mail.php",
